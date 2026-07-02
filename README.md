@@ -8,7 +8,7 @@ This project implements a **mapless navigation planner** for a mobile robot oper
 
 The navigation strategy combines **occupancy-grid mapping**, **frontier-based exploration**, **frontier clustering**, and **Breadth-First Search (BFS)** path planning to efficiently balance exploration and goal completion.
 
----
+
 
 ## Features
 
@@ -21,7 +21,6 @@ The navigation strategy combines **occupancy-grid mapping**, **frontier-based ex
 -  Automatic transition from exploration to goal-directed navigation
 -  Collision-free navigation
 
----
 
 ##  Navigation Pipeline
 
@@ -50,7 +49,7 @@ Robot Movement
 Repeat until Goal is Reached
 ```
 
----
+
 
 ##  Algorithm
 
@@ -71,7 +70,6 @@ The planner operates in two phases:
 
 Once the goal becomes reachable through the discovered map, the planner immediately computes the shortest path using BFS and switches to goal-directed navigation.
 
----
 
 ##  Project Structure
 
@@ -86,7 +84,7 @@ Project_2_Navigation/
 └── WRITEUP.md
 ```
 
----
+
 
 ##  Technologies Used
 
@@ -98,7 +96,7 @@ Project_2_Navigation/
 - Autonomous Robotics
 - LiDAR-Based Navigation
 
----
+
 
 ##  Performance
 
@@ -112,7 +110,7 @@ The final implementation achieved:
 | Collisions | **0** |
 | Combined Score | **0.70** |
 
----
+
 
 ##  How to Run
 
@@ -135,7 +133,7 @@ Visualize robot navigation
 python watch.py
 ```
 
----
+
 
 ##  Future Improvements
 
@@ -148,7 +146,7 @@ Potential extensions include:
 - Persistent Frontier Tracking
 - Next Best View (NBV) exploration
 
----
+
 
 ##  Learning Outcomes
 
@@ -161,7 +159,6 @@ This project strengthened my understanding of:
 - Online path planning
 - Robot decision making under partial observability
 
----
 
 ## Author
 Mehar Arora
