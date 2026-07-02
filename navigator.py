@@ -119,27 +119,6 @@ class Navigator:
                 best_score = score
                 best = (representative, path)
         return best
-    def information_gain(self, frontier):
-        """
-        Estimate the exploration value of a frontier by counting
-        nearby unexplored cells. Unknown cells closer to the
-        frontier receive a higher weight.
-        """
-        gain = 0
-        visited = set()
-        queue = deque([(frontier, 0)])
-        while queue:
-            cell, depth = queue.popleft()
-            if cell in visited:
-                continue
-            visited.add(cell)
-            if depth > 3:
-                continue
-            if cell not in self.known:
-                gain += (4 - depth)
-            for nxt_cell in self.neighbors(cell):
-                queue.append((nxt_cell, depth + 1))
-        return gain
     def target_is_valid(self):
         """
         Check whether the current target is still a valid frontier.
